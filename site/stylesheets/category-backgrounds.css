@@ -1,3 +1,5 @@
-h1 {
-  color: red;
+/* ✅ GLOBAL TEST — ENTIRE SITE BACKGROUND RED */
+
+html, body, .md-main, .md-main__inner, .md-content {
+    background: red !important;
 }

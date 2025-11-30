@@ -71,13 +71,7 @@ entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 # -----------------------------
 
 with mkdocs_gen_files.open("jobs.md", "w") as f:
-    f.write("""---
-body_class: category-jobs
----
-
-# 🧬 Job Opportunities
-
-""")
+    f.write("# 🧬 Job Opportunities\n\n")
 
     f.write("This page is generated automatically from permanent items and newsletters.\n\n---\n\n")
 
