@@ -1,0 +1,58 @@
+site_name: Regional Science Newsletter
+site_description: Bi-weekly regional science newsletter with searchable jobs, grants, and seminars
+site_author: Newsletter Team
+site_url: https://your-github-username.github.io/your-repo-name/
+
+
+nav:
+  - Home: index.md
+  - Subscribe: subscribe.md
+  - Newsletter Archive: newsletter.md
+  - Jobs: jobs.md
+  - Grants: grants.md
+  - Seminars: seminars.md
+  - Database: database.md
+  - Tags: tags.md
+
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - scripts/gen_grants.py
+        - scripts/gen_jobs.py
+        - scripts/gen_seminars.py
+        - scripts/gen_newsletter.py
+        - scripts/gen_tags.py
+
+
+
+# Categories are now driven by TAGS (job, grant, seminar)
+# You will never manually edit jobs.md / grants.md / seminars.md again.
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+
+
+extra:
+  tags:
+    postdoc: Postdoc
+    faculty: Faculty
+    plant: Plant
+    epigenetics: Epigenetics
+    funding: Funding
+    
