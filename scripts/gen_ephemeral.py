@@ -53,15 +53,36 @@ for path in NEWSLETTER_DIR.glob("*.md"):
         ephemerals.append(data)
 
 # -----------------------------
-# ✅ WRITE TO DISK (THIS WAS MISSING)
+# ✅ GROUP BY (type + title)
+# -----------------------------
+
+grouped = {}
+
+for item in ephemerals:
+    key = (item.get("type"), item.get("title"))
+
+    if key not in grouped:
+        grouped[key] = {
+            "type": item.get("type"),
+            "title": item.get("title"),
+            "tags": item.get("tags", []),
+            "sources": [item.get("source_file")],  # ✅ LIST now
+        }
+    else:
+        grouped[key]["sources"].append(item.get("source_file"))
+
+final_items = list(grouped.values())
+
+# -----------------------------
+# ✅ WRITE TO DISK
 # -----------------------------
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-    json.dump(ephemerals, f, indent=2, ensure_ascii=False)
+    json.dump(final_items, f, indent=2, ensure_ascii=False)
 
-print(f"\n✅ Wrote {len(ephemerals)} ephemeral items to {OUTPUT_PATH}\n")
+print(f"\n✅ Wrote {len(final_items)} grouped ephemeral items to {OUTPUT_PATH}\n")
 
 # -----------------------------
 # ✅ DEBUG PRINTOUT (KEEP THIS)

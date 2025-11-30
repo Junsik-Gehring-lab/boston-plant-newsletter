@@ -95,8 +95,12 @@ for tag, items in tags.items():
         for item in items:
             if item["ephemeral"]:
                 # Extract just the date from the filename (e.g., 2025-02-07.md → 2025-02-07)
-                label = item["path"].split("/")[-1].replace(".md", "")
-                f.write(f"- 📰 **{item['title']}** *(from newsletter)* → [{label}]({item['path']})\n")
+                labels = [s.replace(".md", "") for s in item["sources"]]
+                links = [f"[{lab}](../newsletter/{lab}.md)" for lab in labels]
+                joined = ", ".join(links)
+
+                f.write(f"- 📰 **{item['title']}** *(from newsletter)* → {joined}\n")
+
             else:
                 f.write(f"- [{item['title']}]({item['path']})\n")
 

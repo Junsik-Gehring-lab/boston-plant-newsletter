@@ -6,9 +6,10 @@
       "plant",
       "postdoc"
     ],
-    "source_newsletter": "2025-02-07",
-    "body": "",
-    "source_file": "2025-02-07.md"
+    "sources": [
+      "2025-02-07.md",
+      "2025-01-10.md"
+    ]
   },
   {
     "type": "grant",
@@ -17,8 +18,9 @@
       "plant",
       "fellowship"
     ],
-    "source_newsletter": "2025-02-07",
-    "body": "",
-    "source_file": "2025-02-07.md"
+    "sources": [
+      "2025-02-07.md",
+      "2025-01-10.md"
+    ]
   }
 ]

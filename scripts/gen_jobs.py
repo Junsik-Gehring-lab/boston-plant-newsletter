@@ -2,6 +2,7 @@ from pathlib import Path
 import yaml
 import json
 import mkdocs_gen_files
+from datetime import date
 
 items_dir = Path("docs/items/jobs")
 ephemeral_path = Path("docs/.cache/ephemeral.json")
@@ -17,46 +18,51 @@ for path in sorted(items_dir.glob("*.md")):
     if text.startswith("---"):
         meta = yaml.safe_load(text.split("---", 2)[1])
         title = meta.get("title", path.stem)
-        date = meta.get("date", "0000-00-00")
+        date_val = meta.get("date", "0000-00-00")
+
         entries.append({
-            "date": date,
+            "date": date_val,
             "title": title,
             "path": path.relative_to("docs"),
             "ephemeral": False
         })
 
 # -----------------------------
-# ✅ 2. Load EPHEMERAL job items
+# ✅ 2. Load GROUPED EPHEMERAL job items
 # -----------------------------
 
 if ephemeral_path.exists():
-    with open(ephemeral_path) as f:
+    with open(ephemeral_path, encoding="utf-8") as f:
         ephemeral_items = json.load(f)
 
     for item in ephemeral_items:
         if item.get("type") == "job":
+            sources = item.get("sources", [])
+
+            if not sources:
+                continue
+
+            # ✅ Use the LATEST newsletter date for sorting
+            latest_source = max(sources).replace(".md", "")
+
             entries.append({
-                "date": item.get("source_newsletter", "0000-00-00"),
+                "date": latest_source,        # for sorting
                 "title": item.get("title"),
-                "path": f"newsletter/{item.get('source_file')}",
+                "sources": sources,           # ✅ REQUIRED for multi-date rendering
                 "ephemeral": True
             })
 
 # -----------------------------
-# ✅ 3. Sort ALL jobs together
+# ✅ 3. Normalize & Sort ALL jobs together
 # -----------------------------
 
-from datetime import date
-
 def normalize_date(d):
-    # If already a datetime.date → keep it
     if isinstance(d, date):
         return d
-    # If string like "2025-02-07" → convert to date
     try:
         return date.fromisoformat(d)
     except Exception:
-        return date(1900, 1, 1)  # final fallback for safety
+        return date(1900, 1, 1)
 
 entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
@@ -70,6 +76,10 @@ with mkdocs_gen_files.open("jobs.md", "w") as f:
 
     for item in entries:
         if item["ephemeral"]:
-            f.write(f"- 📰 **{item['title']}** *(from newsletter)* → [{item['path']}]({item['path']})\n")
+            labels = [s.replace(".md", "") for s in item["sources"]]
+            links = [f"[{lab}](newsletter/{lab}.md)" for lab in labels]
+            joined = ", ".join(links)
+
+            f.write(f"- 📰 **{item['title']}** *(from newsletter)* → {joined}\n")
         else:
             f.write(f"- [{item['title']}]({item['path']})\n")
