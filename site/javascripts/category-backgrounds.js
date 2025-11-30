@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ✅ Jobs page
   if (path === "/jobs/" || path.endsWith("/jobs/")) {
-    document.querySelector(".md-content").style.background = "red";
+    document.querySelector(".md-content").style.background =
+  'url("../images/jobs-bg.png") no-repeat center center fixed';
+document.querySelector(".md-content").style.backgroundSize = "cover";
+
   }
 
   // ✅ Later you can add:
