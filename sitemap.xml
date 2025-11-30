@@ -1,91 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/communities/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/communities/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/grants/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/grants/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/jobs/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/jobs/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/newsletter/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/newsletter/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/seminars/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/seminars/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/subscribe/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/subscribe/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/items/communities/direct-link-test-1/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/communities/aspb/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/items/communities/test-communities-1/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/communities/direct-link-riken/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/items/grants/arnold-arboretum/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/communities/morris-arboretum/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/items/jobs/job-2025-01-harvard/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/communities/pca/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/items/seminars/seminar-2025-01-epigenomics/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/communities/test-communities-1/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/newsletter/2025-01-10/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/arnold-arboretum/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/chromatin/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/aspb-plantae-fellow/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/epigenetics/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/birnstiel/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/grants-grads/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/bnl-davis/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/grants-postdocs/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/bnl-goldhaber/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/grants-undergrads/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/harvard-herbaria/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/grants/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/leading-edge/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/plant/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/lsf/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
     <url>
-         <loc>https://your-github-username.github.io/your-repo-name/tags/postdoc/</loc>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/simons/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/spencer/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/grants/tulip-fund/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/jobs/test-job-1/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/seminars/arnold-arboretum-talks/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/seminars/huh-talks/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/seminars/oeb-talks/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/items/seminars/salata-talks/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/newsletter/2025-01-10/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/diversity/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/female/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/grants-grads/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/grants-postdocs/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/grants-undergrads/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/grants/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/jobs/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/talks/</loc>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://junsik-gehring-lab.github.io/boston-plant-newsletter/tags/test/</loc>
          <lastmod>2025-11-30</lastmod>
     </url>
 </urlset>
