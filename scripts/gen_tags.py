@@ -3,7 +3,6 @@ import yaml
 import json
 import mkdocs_gen_files
 from collections import defaultdict
-from datetime import date
 
 # -----------------------------
 # ✅ 1. Permanent item sources
@@ -37,7 +36,6 @@ for item_dir in item_dirs:
         title = meta.get("title", path.stem)
         item_tags = meta.get("tags", [])
 
-        # ✅ SITE-RELATIVE PATH
         rel_path = "../" + str(path.relative_to("docs")).replace("\\", "/")
 
         for tag in item_tags:
@@ -48,7 +46,7 @@ for item_dir in item_dirs:
             })
 
 # -----------------------------
-# ✅ 4. Load EPHEMERAL items
+# ✅ 4. Load GROUPED EPHEMERAL items
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -58,17 +56,15 @@ if ephemeral_path.exists():
     for item in ephemeral_items:
         title = item.get("title")
         item_tags = item.get("tags", [])
-        source_file = item.get("source_file")
+        sources = item.get("sources", [])
 
-        if not title or not source_file:
+        if not title or not item_tags or not sources:
             continue
-
-        rel_path = "../newsletter/" + source_file
 
         for tag in item_tags:
             tags[tag].append({
                 "title": title,
-                "path": rel_path,
+                "sources": sources,   # ✅ LIST of newsletter files
                 "ephemeral": True
             })
 
@@ -94,13 +90,11 @@ for tag, items in tags.items():
 
         for item in items:
             if item["ephemeral"]:
-                # Extract just the date from the filename (e.g., 2025-02-07.md → 2025-02-07)
+                # ✅ Multi-date rendering from grouped sources
                 labels = [s.replace(".md", "") for s in item["sources"]]
                 links = [f"[{lab}](../newsletter/{lab}.md)" for lab in labels]
                 joined = ", ".join(links)
 
                 f.write(f"- 📰 **{item['title']}** *(from newsletter)* → {joined}\n")
-
             else:
                 f.write(f"- [{item['title']}]({item['path']})\n")
-
