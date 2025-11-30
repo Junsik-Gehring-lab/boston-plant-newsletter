@@ -59,3 +59,7 @@ extra:
     
 extra_css:
   - stylesheets/category-backgrounds.css
+  
+extra_javascript:
+  - javascripts/category-backgrounds.js
+
