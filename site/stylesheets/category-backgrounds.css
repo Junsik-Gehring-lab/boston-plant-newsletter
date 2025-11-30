@@ -1,10 +1,7 @@
-/* ✅ Jobs background using Material's native page selector */
-.md-main[data-md-url^="jobs"] {
-    background: url("../images/jobs-bg.png") no-repeat center center fixed;
-    background-size: cover;
-}
+/* ✅ FINAL WORKING Jobs background for Material for MkDocs */
 
-/* ✅ TEMPORARY DEBUG PROOF */
-.md-main[data-md-url^="jobs"] {
-    border: 10px solid red;
+body[data-md-url^="jobs"] .md-main {
+    background: url("../images/jobs-bg.png") no-repeat center center fixed !important;
+    background-size: cover !important;
+    border: 10px solid red;   /* ✅ TEMP DEBUG — remove after confirmation */
 }
