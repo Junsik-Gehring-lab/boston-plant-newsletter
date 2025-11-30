@@ -1,15 +1,6 @@
 # Subscribe
 
 
-The newsletter is sent **bi-weekly** and includes:
+**To subscrbe or unsubscribe, please fill out the following Google form.**
 
-
-- Job openings
-- Funding opportunities
-- Seminars and regional events
-
-
-✅ Subscription and unsubscription are fully automated.
-
-
-> **Mailchimp signup form will be embedded here later.**
+[Google Form to Subscribe/Unsubscribe](https://forms.gle/igNtQsFhnZAu4BYX7)
