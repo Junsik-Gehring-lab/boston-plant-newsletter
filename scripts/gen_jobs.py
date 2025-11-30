@@ -46,7 +46,19 @@ if ephemeral_path.exists():
 # ✅ 3. Sort ALL jobs together
 # -----------------------------
 
-entries.sort(key=lambda x: x["date"], reverse=True)
+from datetime import date
+
+def normalize_date(d):
+    # If already a datetime.date → keep it
+    if isinstance(d, date):
+        return d
+    # If string like "2025-02-07" → convert to date
+    try:
+        return date.fromisoformat(d)
+    except Exception:
+        return date(1900, 1, 1)  # final fallback for safety
+
+entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
 # -----------------------------
 # ✅ 4. Write FINAL jobs.md

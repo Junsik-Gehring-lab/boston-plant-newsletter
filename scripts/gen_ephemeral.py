@@ -1,8 +1,11 @@
 from pathlib import Path
 import re
 import textwrap
+import json
 
 NEWSLETTER_DIR = Path("docs/newsletter")
+OUTPUT_DIR = Path("docs/.cache")
+OUTPUT_PATH = OUTPUT_DIR / "ephemeral.json"
 
 block_pattern = re.compile(
     r":::ephemeral\s*(.*?)\s*:::",
@@ -36,14 +39,37 @@ for path in NEWSLETTER_DIR.glob("*.md"):
 
     for raw in blocks:
         data = parse_block(raw)
-        data["__newsletter_file__"] = path.name
+
+        # ✅ Normalize fields for downstream generators
+        data["source_file"] = path.name   # REQUIRED by gen_jobs.py
+
+        # ✅ Normalize tags into a list
+        if "tags" in data:
+            data["tags"] = [t.strip() for t in data["tags"].split(",") if t.strip()]
+        else:
+            data["tags"] = []
+
         ephemerals.append(data)
 
+# -----------------------------
+# ✅ WRITE TO DISK (THIS WAS MISSING)
+# -----------------------------
+
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    json.dump(ephemerals, f, indent=2, ensure_ascii=False)
+
+print(f"\n✅ Wrote {len(ephemerals)} ephemeral items to {OUTPUT_PATH}\n")
+
+# -----------------------------
+# ✅ DEBUG PRINTOUT (KEEP THIS)
+# -----------------------------
 
 print("\n========== EPHEMERAL ITEMS FOUND ==========\n")
 
 for e in ephemerals:
-    print("Newsletter:", e["__newsletter_file__"])
+    print("Newsletter:", e.get("source_file"))
     print("Type:", e.get("type"))
     print("Title:", e.get("title"))
     print("Tags:", e.get("tags"))
