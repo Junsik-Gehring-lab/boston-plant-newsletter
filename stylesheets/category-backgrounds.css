@@ -17,3 +17,9 @@ body:has(a.md-nav__link--active[href$="/jobs/"]) .md-main,
 body:has(a.md-nav__link--active[href$="/jobs/"]) .md-main__inner {
     background: transparent !important;
 }
+
+/* This keeps text readable without hiding the background. */
+.md-main__inner {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+}
