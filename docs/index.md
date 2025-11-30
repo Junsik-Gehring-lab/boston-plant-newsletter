@@ -1,12 +1,13 @@
-# Regional Science Newsletter
+# Boston Area Plant Science Newsletter
 
-Welcome to the **Regional Science Newsletter** — a bi-weekly, community-driven digest sharing:
+Share any plant-related information with your friends:
 
-- **Job opportunities**
-- **Grants & fellowships**
 - **Seminars & scientific events**
+- **Grants & fellowships**
+- **Job opportunities**
+- **Any plant information**
 
-All content is curated for scientists in our regional research community.
+All content is curated for plant people in our regional research community.
 
 ---
 
@@ -14,7 +15,7 @@ All content is curated for scientists in our regional research community.
 
 The most recent issue is always listed at the **top of the archive**:
 
-👉 **[Go to Newsletter Archive](newsletter.md)**
+**[Go to Newsletter Archive](newsletter.md)**
 
 ---
 
@@ -32,15 +33,15 @@ These pages update **automatically** as new items are added.
 
 ---
 
-## ✉️ Subscribe
+## Subscribe
 
-Want to receive the newsletter by email?
+Subscribe and unscribe using the following link:
 
-👉 **[Subscribe here](subscribe.md)**
+**[Subscribe and Unsubscribe](subscribe.md)**
 
 ---
 
-## 📖 About This Site
+## About This Site
 
 This website serves as:
 
@@ -52,4 +53,4 @@ All listings are linked directly from the original newsletter issues.
 
 ---
 
-*Maintained by the Regional Science Newsletter Team.*
+*Maintained by the Boston Area Plant Science Newsletter Team.*
