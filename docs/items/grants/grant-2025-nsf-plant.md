@@ -1,9 +1,9 @@
 ---
 title: "NSF Plant Genome Research Grant"
 date: 2025-01-12
-category: grant
+category: grants
 tags:
-- funding
+- grants
 - plant
 - new1
 source_newsletter: 2025-01-10

@@ -11,7 +11,7 @@ nav:
   - Jobs: jobs.md
   - Grants: grants.md
   - Seminars: seminars.md
-  - Database: database.md
+  - Communities: communities.md
   - Tags: tags.md
 
 
@@ -33,6 +33,7 @@ plugins:
         - scripts/gen_seminars.py
         - scripts/gen_newsletter.py
         - scripts/gen_tags.py
+        - scripts/gen_communities.py
 
 
 

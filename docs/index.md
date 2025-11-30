@@ -1,16 +1,16 @@
-# 🧬 Regional Science Newsletter
+# Regional Science Newsletter
 
 Welcome to the **Regional Science Newsletter** — a bi-weekly, community-driven digest sharing:
 
-- 🧬 **Job opportunities**
-- 💰 **Grants & fellowships**
-- 🎤 **Seminars & scientific events**
+- **Job opportunities**
+- **Grants & fellowships**
+- **Seminars & scientific events**
 
 All content is curated for scientists in our regional research community.
 
 ---
 
-## 🗞️ Latest Newsletter
+## Latest Newsletter
 
 The most recent issue is always listed at the **top of the archive**:
 
@@ -18,14 +18,15 @@ The most recent issue is always listed at the **top of the archive**:
 
 ---
 
-## 🔍 Browse by Category
+## Browse by Category
 
 You can explore all shared content here:
 
-- 🧬 **[Jobs](jobs.md)**  
-- 💰 **[Grants](grants.md)**  
-- 🎤 **[Seminars](seminars.md)**  
-- 🏷️ **[Tags](tags.md)** (Browse by topic like #plant, #epigenetics, #postdoc)
+- **[Jobs](jobs.md)**  
+- **[Grants](grants.md)**  
+- **[Seminars](seminars.md)**  
+- **[Communities](communities.md)**
+- **[Tags](tags.md)** (Browse by topic like #plant, #epigenetics, #postdoc)
 
 These pages update **automatically** as new items are added.
 
