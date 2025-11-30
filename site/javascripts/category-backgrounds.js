@@ -1,13 +1,39 @@
-// ✅ Bulletproof full-page background for Jobs page
+// ✅ Universal full-page background controller for ALL pages
 document.addEventListener("DOMContentLoaded", function () {
   const path = window.location.pathname;
 
-  // ✅ Robust Jobs page detection (works with subpaths)
-  if (path.includes("/jobs")) {
+  // ✅ Detect your GitHub Pages project root dynamically
+  const projectRoot = "/boston-plant-newsletter";
+  const base = window.location.origin + projectRoot;
 
-    const imgUrl = window.location.origin + "/boston-plant-newsletter/images/jobs-bg.png";
+  // ✅ Map URL → background image
+  const bgMap = {
+    "/": "home-bg.png",
+    "/index.html": "home-bg.png",
 
-    // ✅ Apply background to full page
+    "/jobs": "jobs-bg.png",
+    "/grants": "grants-bg.png",
+    "/seminars": "seminars-bg.png",
+    "/organizations": "organizations-bg.png",
+    "/tags": "tags-bg.png",
+    "/subscribe": "subscribe-bg.png"
+  };
+
+  // ✅ Find which background to use
+  let selectedBg = null;
+
+  for (const key in bgMap) {
+    if (path === projectRoot + key || path.startsWith(projectRoot + key + "/")) {
+      selectedBg = bgMap[key];
+      break;
+    }
+  }
+
+  // ✅ Apply background if matched
+  if (selectedBg) {
+    const imgUrl = `${base}/images/${selectedBg}`;
+
+    // ✅ Apply full-page background
     document.body.style.background =
       `url("${imgUrl}") no-repeat center center fixed`;
     document.body.style.backgroundSize = "cover";
