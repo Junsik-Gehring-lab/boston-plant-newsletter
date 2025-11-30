@@ -56,4 +56,7 @@ extra:
     plant: Plant
     epigenetics: Epigenetics
     funding: Funding
-    
+
+
+extra_css:
+  - stylesheets/category-backgrounds.css    
