@@ -12,6 +12,7 @@ item_dirs = [
     Path("docs/items/grants"),
     Path("docs/items/jobs"),
     Path("docs/items/seminars"),
+    Path("docs/items/organizations")
 ]
 
 # -----------------------------
