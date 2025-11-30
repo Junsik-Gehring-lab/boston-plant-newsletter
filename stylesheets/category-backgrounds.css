@@ -1,12 +1,3 @@
-/* ✅ FINAL OVERRIDE FOR MATERIAL — JOBS PAGE BACKGROUND */
-
-body[data-md-url^="jobs"] .md-content {
-    background: url("../images/jobs-bg.png") no-repeat center center fixed !important;
-    background-size: cover !important;
-}
-
-/* ✅ Remove Material's default background layers */
-body[data-md-url^="jobs"] .md-main,
-body[data-md-url^="jobs"] .md-main__inner {
-    background: transparent !important;
+h1 {
+  color: red;
 }
