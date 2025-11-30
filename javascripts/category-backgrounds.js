@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "/seminars": "seminars-bg.png",
     "/organizations": "organizations-bg.png",
     "/tags": "tags-bg.png",
-    "/subscribe": "subscribe-bg.png"
+    "/subscribe": "subscribe-bg.png",
+	
+	 "/newsletter": "newsletter-bg.png"
   };
 
   // ✅ Find which background to use
