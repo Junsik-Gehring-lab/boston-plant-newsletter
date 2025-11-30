@@ -1,5 +1,11 @@
-/* ✅ GLOBAL TEST — ENTIRE SITE BACKGROUND RED */
+/* ✅ FINAL CLEAN TEST: Only the Jobs page goes red */
 
-html, body, .md-main, .md-main__inner, .md-content {
+body[data-md-url^="jobs"] .md-content {
     background: red !important;
+}
+
+/* ✅ Remove Material's default layered backgrounds ONLY on Jobs */
+body[data-md-url^="jobs"] .md-main,
+body[data-md-url^="jobs"] .md-main__inner {
+    background: transparent !important;
 }
