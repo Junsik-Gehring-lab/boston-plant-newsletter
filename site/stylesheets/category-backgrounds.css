@@ -1,11 +1,19 @@
-/* ✅ FINAL CLEAN TEST: Only the Jobs page goes red */
+/* ✅ JOBS PAGE BACKGROUND USING ACTIVE NAV LINK (WORKS ON ALL MATERIAL VERSIONS) */
 
-body[data-md-url^="jobs"] .md-content {
+/* Target Jobs page when /jobs/ nav item is active */
+.md-nav__link--active[href$="/jobs/"] ~ * .md-content,
+.md-nav__link--active[href$="/jobs/"] ~ .md-content,
+.md-nav__link--active[href$="/jobs/"] ~ * {
     background: red !important;
 }
 
-/* ✅ Remove Material's default layered backgrounds ONLY on Jobs */
-body[data-md-url^="jobs"] .md-main,
-body[data-md-url^="jobs"] .md-main__inner {
+/* ✅ Bulletproof fallback using :has() (Chrome supports this) */
+body:has(a.md-nav__link--active[href$="/jobs/"]) .md-content {
+    background: red !important;
+}
+
+/* ✅ Remove Material background layers ONLY on Jobs */
+body:has(a.md-nav__link--active[href$="/jobs/"]) .md-main,
+body:has(a.md-nav__link--active[href$="/jobs/"]) .md-main__inner {
     background: transparent !important;
 }
