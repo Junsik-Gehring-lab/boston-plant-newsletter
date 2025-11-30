@@ -95,6 +95,6 @@ for tag, items in tags.items():
                 links = [f"[{lab}](../newsletter/{lab}.md)" for lab in labels]
                 joined = ", ".join(links)
 
-                f.write(f"- 📰 **{item['title']}** *(from newsletter)* → {joined}\n")
+                f.write(f"- {item['title']} (from newsletter) → {joined}\n")
             else:
                 f.write(f"- [{item['title']}]({item['path']})\n")
