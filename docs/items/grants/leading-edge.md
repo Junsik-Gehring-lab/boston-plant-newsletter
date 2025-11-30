@@ -1,5 +1,5 @@
 ---
-title: "Plantae Fellows - American Society of Plant Biologists"
+title: "Leading Edge Fellows"
 date: 2025-11-29
 category: grants
 tags:

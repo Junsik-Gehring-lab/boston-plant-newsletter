@@ -21,8 +21,8 @@ for item_dir in item_dirs:
         title = meta.get("title", path.stem)
         item_tags = meta.get("tags", [])
 
-        # ✅ FORCE ROOT-RELATIVE PATH
-        rel_path = "/" + str(path.relative_to("docs")).replace("\\", "/")
+        # ✅ FIX: SITE-RELATIVE PATH (not root-relative)
+        rel_path =  "../" + str(path.relative_to("docs")).replace("\\", "/")
 
         for tag in item_tags:
             tags[tag].append((title, rel_path))
