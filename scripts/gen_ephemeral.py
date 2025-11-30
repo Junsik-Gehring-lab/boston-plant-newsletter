@@ -8,9 +8,10 @@ OUTPUT_DIR = Path("docs/.cache")
 OUTPUT_PATH = OUTPUT_DIR / "ephemeral.json"
 
 block_pattern = re.compile(
-    r":::ephemeral\s*(.*?)\s*:::",
+    r"<!--\s*:::ephemeral\s*(.*?)\s*:::\s*-->",
     re.DOTALL
 )
+
 
 keyval_pattern = re.compile(r"^([a-zA-Z_]+):\s*(.+)$")
 
