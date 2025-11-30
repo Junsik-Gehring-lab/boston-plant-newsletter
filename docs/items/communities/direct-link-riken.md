@@ -1,5 +1,5 @@
 ---
-title: "RIKEN"
+title: "RIKEN (redirect)"
 date: 2025-01-20
 category: communities
 tags:

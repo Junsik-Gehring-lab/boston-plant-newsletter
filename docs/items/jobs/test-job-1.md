@@ -1,12 +1,12 @@
 ---
-title: "test job"
+title: "ecoevojobs.net"
 date: 2025-01-14
 category: job
 tags:
 - jobs
 - test
-source_newsletter: 2025-01-10
-institution: Harvard University
+source_newsletter: None
+institution: None
 ---
 
 
