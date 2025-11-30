@@ -36,11 +36,11 @@
     ]
   },
   {
-    "type": "community",
-    "title": "Test Ephemeral Community",
+    "type": "organization",
+    "title": "Test Ephemeral Organization",
     "tags": [
       "plant",
-      "community"
+      "organizations"
     ],
     "sources": [
       "2025-02-07.md",
@@ -48,10 +48,10 @@
     ]
   },
   {
-    "type": "communities",
+    "type": "organization",
     "title": "The New England Agroforester",
     "tags": [
-      "communities"
+      "organizations"
     ],
     "sources": [
       "2025-11-29.md"

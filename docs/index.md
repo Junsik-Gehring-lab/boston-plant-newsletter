@@ -26,7 +26,7 @@ You can explore all shared content here:
 - **[Jobs](jobs.md)**  
 - **[Grants](grants.md)**  
 - **[Seminars](seminars.md)**  
-- **[Communities](communities.md)**
+- **[Organizations](organizations.md)**
 - **[Tags](tags.md)** (Browse by topic like #plant, #epigenetics, #postdoc)
 
 These pages update **automatically** as new items are added.

@@ -1,10 +1,10 @@
 ---
 title: "Plant Cell Atlas (PCA)"
 date: 2025-01-20
-category: communities
+category: organizations
 tags:
 - aspb
-- communities
+- organizations
 - database
 ---
 

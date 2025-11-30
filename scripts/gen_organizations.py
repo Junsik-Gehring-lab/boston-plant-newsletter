@@ -4,13 +4,13 @@ import json
 import mkdocs_gen_files
 from datetime import date
 
-items_dir = Path("docs/items/communities")
+items_dir = Path("docs/items/organizations")
 ephemeral_path = Path("docs/.cache/ephemeral.json")
 
 entries = []
 
 # -----------------------------
-# ✅ 1. Load PERMANENT communities
+# ✅ 1. Load PERMANENT organizations
 # -----------------------------
 
 for path in sorted(items_dir.glob("*.md")):
@@ -28,7 +28,7 @@ for path in sorted(items_dir.glob("*.md")):
         })
 
 # -----------------------------
-# ✅ 2. Load GROUPED EPHEMERAL communities
+# ✅ 2. Load GROUPED EPHEMERAL organizations
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -36,7 +36,7 @@ if ephemeral_path.exists():
         ephemeral_items = json.load(f)
 
     for item in ephemeral_items:
-        if item.get("type") == "community":
+        if item.get("type") == "organization":
             sources = item.get("sources", [])
             if not sources:
                 continue
@@ -65,11 +65,11 @@ def normalize_date(d):
 entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
 # -----------------------------
-# ✅ 4. Write FINAL communities.md
+# ✅ 4. Write FINAL organizations.md
 # -----------------------------
 
-with mkdocs_gen_files.open("communities.md", "w") as f:
-    f.write("# 🌍 Communities & Networks\n\n")
+with mkdocs_gen_files.open("organizations.md", "w") as f:
+    f.write("# 🌍 Organizations, Databases, Networks\n\n")
     f.write("This page is generated automatically from permanent items and newsletters.\n\n---\n\n")
 
     for item in entries:

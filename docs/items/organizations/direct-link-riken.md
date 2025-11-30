@@ -1,9 +1,9 @@
 ---
 title: "RIKEN (redirect)"
 date: 2025-01-20
-category: communities
+category: organizations
 tags:
-- communities
+- organizations
 ---
 
 You are being redirected to RIKEN homepage.
