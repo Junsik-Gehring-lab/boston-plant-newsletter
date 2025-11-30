@@ -1,6 +1,10 @@
-/* ✅ Jobs background */
-.category-jobs .md-main {
+/* ✅ Jobs background using Material's native page selector */
+.md-main[data-md-url^="jobs"] {
     background: url("../images/jobs-bg.png") no-repeat center center fixed;
     background-size: cover;
-	border: 10px solid red
+}
+
+/* ✅ TEMPORARY DEBUG PROOF */
+.md-main[data-md-url^="jobs"] {
+    border: 10px solid red;
 }
