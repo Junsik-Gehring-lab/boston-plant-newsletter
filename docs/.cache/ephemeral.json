@@ -22,5 +22,29 @@
       "2025-02-07.md",
       "2025-01-10.md"
     ]
+  },
+  {
+    "type": "seminar",
+    "title": "Test Ephemeral Seminar",
+    "tags": [
+      "plant",
+      "seminar"
+    ],
+    "sources": [
+      "2025-02-07.md",
+      "2025-01-10.md"
+    ]
+  },
+  {
+    "type": "community",
+    "title": "Test Ephemeral Community",
+    "tags": [
+      "plant",
+      "community"
+    ],
+    "sources": [
+      "2025-02-07.md",
+      "2025-01-10.md"
+    ]
   }
 ]
