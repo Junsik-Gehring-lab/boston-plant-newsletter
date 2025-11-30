@@ -9,5 +9,16 @@
     "source_newsletter": "2025-02-07",
     "body": "",
     "source_file": "2025-02-07.md"
+  },
+  {
+    "type": "grant",
+    "title": "Test Ephemeral Grant",
+    "tags": [
+      "plant",
+      "fellowship"
+    ],
+    "source_newsletter": "2025-02-07",
+    "body": "",
+    "source_file": "2025-02-07.md"
   }
 ]
