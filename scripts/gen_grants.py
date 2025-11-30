@@ -28,7 +28,7 @@ for path in sorted(items_dir.glob("*.md")):
         })
 
 # -----------------------------
-# ✅ 2. Load EPHEMERAL grants
+# ✅ 2. Load GROUPED EPHEMERAL grants
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -37,15 +37,21 @@ if ephemeral_path.exists():
 
     for item in ephemeral_items:
         if item.get("type") == "grant":
+            sources = item.get("sources", [])
+            if not sources:
+                continue
+
+            latest_source = max(sources).replace(".md", "")
+
             entries.append({
-                "date": item.get("source_newsletter", "0000-00-00"),
+                "date": latest_source,
                 "title": item.get("title"),
-                "path": f"newsletter/{item.get('source_file')}",
+                "sources": sources,
                 "ephemeral": True
             })
 
 # -----------------------------
-# ✅ 3. Normalize & sort dates
+# ✅ 3. Normalize & Sort
 # -----------------------------
 
 def normalize_date(d):
@@ -68,6 +74,10 @@ with mkdocs_gen_files.open("grants.md", "w") as f:
 
     for item in entries:
         if item["ephemeral"]:
-            f.write(f"- 📰 **{item['title']}** *(from newsletter)* → [{item['path']}]({item['path']})\n")
+            labels = [s.replace(".md", "") for s in item["sources"]]
+            links = [f"[{lab}](newsletter/{lab}.md)" for lab in labels]
+            joined = ", ".join(links)
+
+            f.write(f"- 📰 **{item['title']}** *(from newsletter)* → {joined}\n")
         else:
             f.write(f"- [{item['title']}]({item['path']})\n")

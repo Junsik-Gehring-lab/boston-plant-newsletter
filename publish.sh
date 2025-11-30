@@ -2,42 +2,58 @@
 set -e
 
 echo "=============================="
-echo "Publishing Newsletter Site"
+echo " 🚀 Publishing Newsletter Site"
 echo "=============================="
 
-# 1. Check git status
+# -----------------------------
+# ✅ 0. Generate ephemeral cache
+# -----------------------------
+echo "🔄 Generating ephemeral cache..."
+python scripts/gen_ephemeral.py
+
+# -----------------------------
+# ✅ 1. Check git status
+# -----------------------------
 echo "🔍 Checking git status..."
 git status
 
 echo
-read -p "Continue with publishing? (y/n): " confirm
+read -p "✅ Continue with publishing? (y/n): " confirm
 if [[ "$confirm" != "y" ]]; then
-  echo "Publishing canceled."
+  echo "❌ Publishing canceled."
   exit 1
 fi
 
-# 2. Build MkDocs site
+# -----------------------------
+# ✅ 2. Build MkDocs site
+# -----------------------------
 echo
-echo "Building MkDocs site..."
+echo "🛠️  Building MkDocs site..."
 mkdocs build
 
-# 3. Deploy to GitHub Pages
+# -----------------------------
+# ✅ 3. Deploy to GitHub Pages
+# -----------------------------
 echo
-echo "Deploying site to GitHub Pages (gh-pages)..."
+echo "🌍 Deploying site to GitHub Pages (gh-pages)..."
 ghp-import -n -p -f site
 
-# 4. Commit source changes
+# -----------------------------
+# ✅ 4. Commit source changes
+# -----------------------------
 echo
-read -p "Enter git commit message: " commit_msg
+read -p "📝 Enter git commit message: " commit_msg
 
 git add .
 git commit -m "$commit_msg"
 
-# 5. Push source repo
+# -----------------------------
+# ✅ 5. Push source repo
+# -----------------------------
 echo
-echo "Pushing source to GitHub..."
+echo "⬆️  Pushing source to GitHub..."
 git push
 
 echo
-echo "DONE! Your site is now live."
+echo "✅✅✅ DONE! Your site is now live."
 echo "=============================="
