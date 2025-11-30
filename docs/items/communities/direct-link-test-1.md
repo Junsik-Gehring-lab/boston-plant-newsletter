@@ -6,6 +6,8 @@ tags:
 - communities
 ---
 
+You are being redirected to RIKEN homepage.
+
 <meta http-equiv="refresh" content="0; url=https://www.riken.jp/en/">
 
 <script>
