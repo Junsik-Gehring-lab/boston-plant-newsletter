@@ -94,6 +94,9 @@ for tag, items in tags.items():
 
         for item in items:
             if item["ephemeral"]:
-                f.write(f"- 📰 **{item['title']}** *(from newsletter)* → [{item['path']}]({item['path']})\n")
+                # Extract just the date from the filename (e.g., 2025-02-07.md → 2025-02-07)
+                label = item["path"].split("/")[-1].replace(".md", "")
+                f.write(f"- 📰 **{item['title']}** *(from newsletter)* → [{label}]({item['path']})\n")
             else:
                 f.write(f"- [{item['title']}]({item['path']})\n")
+
