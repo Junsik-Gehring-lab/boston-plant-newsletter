@@ -7,6 +7,7 @@ tags:
   - grants-undergrads
   - grants-grads
   - grants-postdocs
+  - arboretum
 
 source_newsletter: 
   - 2000-01-01

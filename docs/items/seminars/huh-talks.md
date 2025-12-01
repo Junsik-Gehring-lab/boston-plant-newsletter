@@ -3,7 +3,7 @@ title: "Harvard University Herbaria & Libraries Herbaria Seminar Series"
 date: 2025-01-20
 category: seminar
 tags:
-- talks
+- seminars
 source_newsletter: 2025-01-10
 host: MIT
 ---

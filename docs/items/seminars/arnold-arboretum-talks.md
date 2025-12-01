@@ -3,7 +3,8 @@ title: "Research Talks at the Arnold Arboretum and Harvard University Herbaria (
 date: 2025-01-20
 category: seminar
 tags:
-- talks
+- seminars
+
 source_newsletter: 2025-01-10
 host: MIT
 ---

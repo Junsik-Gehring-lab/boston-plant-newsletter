@@ -6,6 +6,7 @@ tags:
   - grants
   - grants-grads
   - grants-postdocs
+  - europe
 
 source_newsletter: 
   - None
