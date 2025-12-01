@@ -17,6 +17,7 @@ nav:
 
 theme:
   name: material
+  logo: images/logo.jpg
   features:
     - navigation.tabs
     - navigation.sections
