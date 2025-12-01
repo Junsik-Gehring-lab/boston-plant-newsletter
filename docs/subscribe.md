@@ -43,6 +43,4 @@ You can unsubscribe at any time with one click.
 
 Every email you receive includes a **one-click unsubscribe link** at the bottom.
 
-You can also manage your subscription here:
-
-[Unsubscribe at Buttondown](https://buttondown.email/boston-plant)
+Please wait for one more spam, if you want to unsubscribe! 😅
