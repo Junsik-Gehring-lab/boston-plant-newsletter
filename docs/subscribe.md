@@ -45,4 +45,4 @@ Every email you receive includes a **one-click unsubscribe link** at the bottom.
 
 You can also manage your subscription here:
 
-👉 https://buttondown.email/boston-plant
+[Unsubscribe at Buttondown](https://buttondown.email/boston-plant)
