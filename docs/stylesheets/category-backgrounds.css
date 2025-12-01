@@ -23,3 +23,32 @@ body:has(a.md-nav__link--active[href$="/jobs/"]) .md-main__inner {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
 }
+
+
+
+/* ✅ 3D Subscribe Button Styling */
+.buttondown-form input[type="submit"] {
+  background: linear-gradient(180deg, #4CAF50, #2e7d32);  /* green 3D look */
+  color: white;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;               /* ✅ Finger-hand cursor */
+  box-shadow: 0 6px 0 #1b5e20;     /* ✅ 3D shadow underneath */
+  transition: all 0.15s ease;
+}
+
+/* ✅ Hover effect */
+.buttondown-form input[type="submit"]:hover {
+  background: linear-gradient(180deg, #66bb6a, #388e3c);
+  transform: translateY(-2px);   /* ✅ Lifts upward */
+  box-shadow: 0 8px 0 #1b5e20;
+}
+
+/* ✅ Click / Press effect */
+.buttondown-form input[type="submit"]:active {
+  transform: translateY(4px);    /* ✅ Presses down */
+  box-shadow: 0 2px 0 #1b5e20;
+}
+
