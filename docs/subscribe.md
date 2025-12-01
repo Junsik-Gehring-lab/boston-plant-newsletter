@@ -12,10 +12,15 @@ You can unsubscribe at any time with one click.
 <form
   action="https://buttondown.email/api/emails/embed-subscribe/boston-plant"
   method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/boston-plant', 'popupwindow')"
   class="buttondown-form"
 >
+  <!-- ✅ THIS IS THE FIX -->
+  <input
+    type="hidden"
+    name="redirect_to"
+    value="https://junsik-gehring-lab.github.io/boston-plant-newsletter/subscribe/"
+  >
+
   <input
     type="email"
     name="email"
@@ -23,12 +28,14 @@ You can unsubscribe at any time with one click.
     required
     style="padding: 10px; width: 260px;"
   >
+
   <input
     type="submit"
     value="Subscribe"
     style="padding: 10px 16px; margin-left: 8px;"
   >
 </form>
+
 
 ---
 
