@@ -1,10 +1,10 @@
-# 📬 Subscribe to the Newsletter
+# Subscribe to the Newsletter
 
 Stay updated with jobs, grants, seminars, and community news in the Boston plant science community.
 
 ---
 
-## ✅ Subscribe by Email
+## Subscribe by Email
 
 Enter your email below to receive the bi-weekly newsletter.  
 You can unsubscribe at any time with one click.
@@ -14,7 +14,7 @@ You can unsubscribe at any time with one click.
   method="post"
   class="buttondown-form"
 >
-  <!-- ✅ THIS IS THE FIX -->
+  <!-- THIS IS THE FIX -->
   <input
     type="hidden"
     name="redirect_to"
@@ -39,7 +39,7 @@ You can unsubscribe at any time with one click.
 
 ---
 
-## 🔁 Unsubscribe
+## Unsubscribe
 
 Every email you receive includes a **one-click unsubscribe link** at the bottom.
 

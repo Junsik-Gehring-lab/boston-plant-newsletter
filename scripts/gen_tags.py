@@ -5,7 +5,7 @@ import mkdocs_gen_files
 from collections import defaultdict
 
 # -----------------------------
-# ✅ 1. Permanent item sources
+# 1. Permanent item sources
 # -----------------------------
 
 item_dirs = [
@@ -16,7 +16,7 @@ item_dirs = [
 ]
 
 # -----------------------------
-# ✅ 2. Ephemeral cache source
+# 2. Ephemeral cache source
 # -----------------------------
 
 ephemeral_path = Path("docs/.cache/ephemeral.json")
@@ -24,7 +24,7 @@ ephemeral_path = Path("docs/.cache/ephemeral.json")
 tags = defaultdict(list)
 
 # -----------------------------
-# ✅ 3. Load PERMANENT items
+# 3. Load PERMANENT items
 # -----------------------------
 
 for item_dir in item_dirs:
@@ -47,7 +47,7 @@ for item_dir in item_dirs:
             })
 
 # -----------------------------
-# ✅ 4. Load GROUPED EPHEMERAL items
+# 4. Load GROUPED EPHEMERAL items
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -65,33 +65,33 @@ if ephemeral_path.exists():
         for tag in item_tags:
             tags[tag].append({
                 "title": title,
-                "sources": sources,   # ✅ LIST of newsletter files
+                "sources": sources,   # LIST of newsletter files
                 "ephemeral": True
             })
 
 # -----------------------------
-# ✅ 5. Generate main tag index
+# 5. Generate main tag index
 # -----------------------------
 
 with mkdocs_gen_files.open("tags.md", "w") as f:
-    f.write("# 🏷️ Browse by Tag\n\n")
+    f.write("# Browse by Tag\n\n")
     f.write("Click any tag to view all related items.\n\n---\n\n")
 
     for tag in sorted(tags):
         f.write(f"- [{tag}](tags/{tag}.md) ({len(tags[tag])})\n")
 
 # -----------------------------
-# ✅ 6. Generate one page per tag
+# 6. Generate one page per tag
 # -----------------------------
 
 for tag, items in tags.items():
     with mkdocs_gen_files.open(f"tags/{tag}.md", "w") as f:
-        f.write(f"# 🏷️ Tag: {tag}\n\n")
+        f.write(f"# Tag: {tag}\n\n")
         f.write("Items with this tag:\n\n---\n\n")
 
         for item in items:
             if item["ephemeral"]:
-                # ✅ Multi-date rendering from grouped sources
+                # Multi-date rendering from grouped sources
                 labels = [s.replace(".md", "") for s in item["sources"]]
                 links = [f"[{lab}](../newsletter/{lab}.md)" for lab in labels]
                 joined = ", ".join(links)

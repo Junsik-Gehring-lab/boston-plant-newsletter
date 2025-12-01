@@ -10,7 +10,7 @@ ephemeral_path = Path("docs/.cache/ephemeral.json")
 entries = []
 
 # -----------------------------
-# ✅ 1. Load PERMANENT job items
+# 1. Load PERMANENT job items
 # -----------------------------
 
 for path in sorted(items_dir.glob("*.md")):
@@ -28,7 +28,7 @@ for path in sorted(items_dir.glob("*.md")):
         })
 
 # -----------------------------
-# ✅ 2. Load GROUPED EPHEMERAL job items
+# 2. Load GROUPED EPHEMERAL job items
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -42,18 +42,18 @@ if ephemeral_path.exists():
             if not sources:
                 continue
 
-            # ✅ Use the LATEST newsletter date for sorting
+            # Use the LATEST newsletter date for sorting
             latest_source = max(sources).replace(".md", "")
 
             entries.append({
                 "date": latest_source,        # for sorting
                 "title": item.get("title"),
-                "sources": sources,           # ✅ REQUIRED for multi-date rendering
+                "sources": sources,           # REQUIRED for multi-date rendering
                 "ephemeral": True
             })
 
 # -----------------------------
-# ✅ 3. Normalize & Sort ALL jobs together
+# 3. Normalize & Sort ALL jobs together
 # -----------------------------
 
 def normalize_date(d):
@@ -67,11 +67,11 @@ def normalize_date(d):
 entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
 # -----------------------------
-# ✅ 4. Write FINAL jobs.md
+# 4. Write FINAL jobs.md
 # -----------------------------
 
 with mkdocs_gen_files.open("jobs.md", "w") as f:
-    f.write("# 🧬 Job Opportunities\n\n")
+    f.write("#Job Opportunities\n\n")
 
     f.write("This page is generated automatically from permanent items and newsletters.\n\n---\n\n")
 

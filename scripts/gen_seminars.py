@@ -10,7 +10,7 @@ ephemeral_path = Path("docs/.cache/ephemeral.json")
 entries = []
 
 # -----------------------------
-# ✅ 1. Load PERMANENT seminars
+# 1. Load PERMANENT seminars
 # -----------------------------
 
 for path in sorted(items_dir.glob("*.md")):
@@ -28,7 +28,7 @@ for path in sorted(items_dir.glob("*.md")):
         })
 
 # -----------------------------
-# ✅ 2. Load GROUPED EPHEMERAL seminars
+# 2. Load GROUPED EPHEMERAL seminars
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -51,7 +51,7 @@ if ephemeral_path.exists():
             })
 
 # -----------------------------
-# ✅ 3. Normalize & Sort
+# 3. Normalize & Sort
 # -----------------------------
 
 def normalize_date(d):
@@ -65,11 +65,11 @@ def normalize_date(d):
 entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
 # -----------------------------
-# ✅ 4. Write FINAL seminars.md
+# 4. Write FINAL seminars.md
 # -----------------------------
 
 with mkdocs_gen_files.open("seminars.md", "w") as f:
-    f.write("# 🎤 Seminars & Talks\n\n")
+    f.write("#Seminars & Talks\n\n")
     f.write("This page is generated automatically from permanent items and newsletters.\n\n---\n\n")
 
     for item in entries:

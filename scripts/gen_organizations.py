@@ -10,7 +10,7 @@ ephemeral_path = Path("docs/.cache/ephemeral.json")
 entries = []
 
 # -----------------------------
-# ✅ 1. Load PERMANENT organizations
+# 1. Load PERMANENT organizations
 # -----------------------------
 
 for path in sorted(items_dir.glob("*.md")):
@@ -28,7 +28,7 @@ for path in sorted(items_dir.glob("*.md")):
         })
 
 # -----------------------------
-# ✅ 2. Load GROUPED EPHEMERAL organizations
+# 2. Load GROUPED EPHEMERAL organizations
 # -----------------------------
 
 if ephemeral_path.exists():
@@ -51,7 +51,7 @@ if ephemeral_path.exists():
             })
 
 # -----------------------------
-# ✅ 3. Normalize & Sort
+# 3. Normalize & Sort
 # -----------------------------
 
 def normalize_date(d):
@@ -65,11 +65,11 @@ def normalize_date(d):
 entries.sort(key=lambda x: normalize_date(x["date"]), reverse=True)
 
 # -----------------------------
-# ✅ 4. Write FINAL organizations.md
+# 4. Write FINAL organizations.md
 # -----------------------------
 
 with mkdocs_gen_files.open("organizations.md", "w") as f:
-    f.write("# 🌍 Organizations, Databases, Networks\n\n")
+    f.write("#Organizations, Databases, Networks\n\n")
     f.write("This page is generated automatically from permanent items and newsletters.\n\n---\n\n")
 
     for item in entries:
