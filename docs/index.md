@@ -9,6 +9,14 @@ Share any plant-related information with your friends:
 
 All content is curated for plant people in our regional research community.
 
+This website serves as:
+
+- A **permanent archive** of past newsletters  
+- A **searchable database** of opportunities and events  
+- A **community resource** for staying connected and informed  
+
+All listings are linked directly from the original newsletter issues.
+
 ---
 
 ## Latest Newsletter
@@ -40,17 +48,8 @@ Subscribe and unscribe using the following link:
 **[Subscribe and Unsubscribe](subscribe.md)**
 
 ---
+*Newsletter (Since 2025 Jan)*
+*Homepage (Since 2025 Dec)*
+*Maintained by the Boston Area Plant Science Newsletter Team*
+*[Contact](mailto:jc2842@wi.mit.edu)*
 
-## About This Site
-
-This website serves as:
-
-- A **permanent archive** of past newsletters  
-- A **searchable database** of opportunities and events  
-- A **community resource** for staying connected and informed  
-
-All listings are linked directly from the original newsletter issues.
-
----
-
-*Maintained by the Boston Area Plant Science Newsletter Team.*

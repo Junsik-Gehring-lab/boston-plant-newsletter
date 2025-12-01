@@ -1,5 +1,5 @@
 ---
-title: "VIP3 Postdoc Program"
+title: "McKinsey & Company Advanced Professional Degree Candidates (hiring)"
 date: 2025-11-30
 category: organizations
 tags:
