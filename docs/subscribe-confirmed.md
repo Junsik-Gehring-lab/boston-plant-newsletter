@@ -10,9 +10,4 @@ Welcome to the **Boston Area Plant Science Newsletter** — we’re glad you’r
 
 ---
 
-📖 What would you like to explore next?
-
-- 👉 [Read the latest newsletter](../newsletter/)
-- 👉 [Browse Jobs](../jobs/)
-- 👉 [Browse Grants](../grants/)
-- 👉 [Browse Seminars](../seminars/)
+📖 [Back to the Newsletter homepage](https://junsik-gehring-lab.github.io/boston-plant-newsletter/)

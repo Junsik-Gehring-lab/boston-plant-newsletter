@@ -12,4 +12,4 @@ Thanks for signing up for the **Boston Area Plant Science Newsletter**.
 
 If you entered the wrong address, you can go back and try again:
 
-👉 [Back to Subscribe](../subscribe/)
+📖 [Back to the Newsletter homepage](https://junsik-gehring-lab.github.io/boston-plant-newsletter/)
