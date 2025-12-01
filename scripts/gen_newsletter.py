@@ -15,7 +15,7 @@ entries.sort(reverse=True)
 
 with mkdocs_gen_files.open("newsletter.md", "w") as f:
     f.write("# 🗞️ Newsletter Archive\n\n")
-    f.write("All past issues of the Regional Science Newsletter.\n\n---\n\n")
+    f.write("All past issues of the Boston Area Plant Science Newsletter.\n\n---\n\n")
 
     current_year = None
     

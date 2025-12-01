@@ -48,8 +48,8 @@ Subscribe and unscribe using the following link:
 **[Subscribe and Unsubscribe](subscribe.md)**
 
 ---
-*Newsletter (Since 2025 Jan)*
-*Homepage (Since 2025 Dec)*
-*Maintained by the Boston Area Plant Science Newsletter Team*
+*Newsletter (Since 2025 Jan)*  
+*Homepage (Since 2025 Dec)*  
+*Maintained by the Boston Area Plant Science Newsletter Team*  
 *[Contact](mailto:jc2842@wi.mit.edu)*
 
