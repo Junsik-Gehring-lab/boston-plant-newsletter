@@ -3,10 +3,27 @@
     "type": "organization",
     "title": "The New England Agroforester",
     "tags": [
-      "organizations"
+      "organizations",
+      "seminars",
+      "workshops",
+      "databases"
     ],
     "sources": [
-      "2025-11-29.md"
+      "2025-12-01.md",
+      "2025-12-01.md"
+    ]
+  },
+  {
+    "type": "seminar",
+    "title": "The New England Agroforester",
+    "tags": [
+      "organizations",
+      "seminars",
+      "workshops",
+      "databases"
+    ],
+    "sources": [
+      "2025-12-01.md"
     ]
   }
 ]

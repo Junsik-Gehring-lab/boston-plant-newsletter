@@ -49,6 +49,12 @@ for path in NEWSLETTER_DIR.glob("*.md"):
             data["tags"] = [t.strip() for t in data["tags"].split(",") if t.strip()]
         else:
             data["tags"] = []
+            
+        # ✅ Normalize types into a list (SUPPORT MULTI-CATEGORY)
+        if "type" in data:
+            data["types"] = [t.strip() for t in data["type"].split(",") if t.strip()]
+        else:
+            data["types"] = []
 
         ephemerals.append(data)
 
@@ -59,17 +65,18 @@ for path in NEWSLETTER_DIR.glob("*.md"):
 grouped = {}
 
 for item in ephemerals:
-    key = (item.get("type"), item.get("title"))
+    for t in item.get("types", []):
+        key = (t, item.get("title"))
+        if key not in grouped:
+            grouped[key] = {
+                "type": t,   # ✅ SINGLE TYPE PER OUTPUT ITEM
+                "title": item.get("title"),
+                "tags": item.get("tags", []),
+                "sources": [item.get("source_file")],
+            }
+        else:
+            grouped[key]["sources"].append(item.get("source_file"))
 
-    if key not in grouped:
-        grouped[key] = {
-            "type": item.get("type"),
-            "title": item.get("title"),
-            "tags": item.get("tags", []),
-            "sources": [item.get("source_file")],  # ✅ LIST now
-        }
-    else:
-        grouped[key]["sources"].append(item.get("source_file"))
 
 final_items = list(grouped.values())
 
@@ -92,10 +99,10 @@ print("\n========== EPHEMERAL ITEMS FOUND ==========\n")
 
 for e in ephemerals:
     print("Newsletter:", e.get("source_file"))
-    print("Type:", e.get("type"))
+    print("Types:", e.get("types"))
     print("Title:", e.get("title"))
     print("Tags:", e.get("tags"))
-    print("Source:", e.get("source_newsletter"))
+    print("Source file:", e.get("source_file"))
     print("Body:")
     print(textwrap.indent(e.get("body", ""), "  "))
     print("------------------------------------------")
