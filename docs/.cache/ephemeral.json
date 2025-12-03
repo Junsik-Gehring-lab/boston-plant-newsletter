@@ -34,5 +34,35 @@
     "sources": [
       "2025-12-01.md"
     ]
+  },
+  {
+    "type": "organization",
+    "title": "NASA's Student Airborne Research Program (SARP)",
+    "tags": [
+      "organizations",
+      "internships",
+      "nasa",
+      "grants-grads",
+      "grants-undergrads",
+      "mentorings"
+    ],
+    "sources": [
+      "2025-12-03.md"
+    ]
+  },
+  {
+    "type": "grants",
+    "title": "NASA's Student Airborne Research Program (SARP)",
+    "tags": [
+      "organizations",
+      "internships",
+      "nasa",
+      "grants-grads",
+      "grants-undergrads",
+      "mentorings"
+    ],
+    "sources": [
+      "2025-12-03.md"
+    ]
   }
 ]
