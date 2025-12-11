@@ -99,5 +99,54 @@
     "sources": [
       "2025-12-03.md"
     ]
+  },
+  {
+    "type": "grant",
+    "title": "Flagship Pioneering Fellowship",
+    "tags": [
+      "organizations",
+      "internships",
+      "industry",
+      "grants-grads",
+      "grants-postdocs"
+    ],
+    "sources": [
+      "2025-12-11.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Bayer Crop Science 2026 University Mentoring Program",
+    "tags": [
+      "organizations",
+      "mentorings",
+      "industry"
+    ],
+    "sources": [
+      "2025-12-11.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "ASPB Summer Undergraduate Research Fellowships Application",
+    "tags": [
+      "aspb",
+      "grants-undergrads"
+    ],
+    "sources": [
+      "2025-12-11.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "2026 ROOT & SHOOT travel awards",
+    "tags": [
+      "grants-undergrads",
+      "grants-grads",
+      "grants-postdocs"
+    ],
+    "sources": [
+      "2025-12-11.md"
+    ]
   }
 ]
