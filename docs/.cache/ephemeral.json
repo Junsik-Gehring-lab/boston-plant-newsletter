@@ -148,5 +148,87 @@
     "sources": [
       "2025-12-11.md"
     ]
+  },
+  {
+    "type": "grant",
+    "title": "Schmidt Science Fellows",
+    "tags": [
+      "organizations",
+      "grants-grads"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "ASPB Funding Opportunities",
+    "tags": [
+      "organizations",
+      "grants",
+      "grants-grads",
+      "grants-postdocs",
+      "grants-undergrads"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Laura Bassi Scholarship",
+    "tags": [
+      "organizations",
+      "grants",
+      "grants-grads",
+      "grants-undergrads"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "NSFNSF 26-504: Postdoctoral Research Fellowships in Biology (PRFB)",
+    "tags": [
+      "grants-grads",
+      "grants-postdocs"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Nucleate Venture Capital Leaders Program",
+    "tags": [
+      "industry"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Pairwise summer internship openings",
+    "tags": [
+      "industry",
+      "interships"
+    ],
+    "sources": [
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "BTI Research Experience for Undergrads",
+    "tags": [
+      "internships",
+      "grants-undergrads"
+    ],
+    "sources": [
+      "2026-03-19.md",
+      "2026-03-19.md"
+    ]
   }
 ]
