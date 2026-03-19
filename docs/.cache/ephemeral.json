@@ -209,17 +209,6 @@
     ]
   },
   {
-    "type": "organization",
-    "title": "Pairwise summer internship openings",
-    "tags": [
-      "industry",
-      "interships"
-    ],
-    "sources": [
-      "2026-03-19.md"
-    ]
-  },
-  {
     "type": "grant",
     "title": "BTI Research Experience for Undergrads",
     "tags": [
@@ -228,6 +217,17 @@
     ],
     "sources": [
       "2026-03-19.md",
+      "2026-03-19.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Pairwise summer internship openings",
+    "tags": [
+      "industry",
+      "interships"
+    ],
+    "sources": [
       "2026-03-19.md"
     ]
   }
