@@ -184,7 +184,9 @@
       "grants-undergrads"
     ],
     "sources": [
-      "2026-03-19.md"
+      "2026-03-19.md",
+      "2026-02-23.md",
+      "2026-06-09.md"
     ]
   },
   {
@@ -205,7 +207,8 @@
       "industry"
     ],
     "sources": [
-      "2026-03-19.md"
+      "2026-03-19.md",
+      "2026-02-26.md"
     ]
   },
   {
@@ -238,7 +241,364 @@
       "grants"
     ],
     "sources": [
-      "2026-03-19.md"
+      "2026-03-19.md",
+      "2026-02-26.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "NSF 26-504: Postdoctoral Research Fellowships in Biology (PRFB)",
+    "tags": [
+      "grants-grads",
+      "grants-postdocs"
+    ],
+    "sources": [
+      "2026-02-26.md",
+      "2026-05-07.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "BTI Research Experience for Undergraduates",
+    "tags": [
+      "grants-undergrads",
+      "internships"
+    ],
+    "sources": [
+      "2026-02-26.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Plant BLOOME Grant",
+    "tags": [
+      "grants",
+      "grants-grads",
+      "grants-postdocs",
+      "grants-undergrads",
+      "outreach",
+      "education"
+    ],
+    "sources": [
+      "2026-03-25.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Grow Native Massachusetts",
+    "tags": [
+      "organizations",
+      "workshops"
+    ],
+    "sources": [
+      "2026-03-25.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Massachusetts Pollinator Network",
+    "tags": [
+      "organizations",
+      "talks"
+    ],
+    "sources": [
+      "2026-03-25.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Nuts & Bolts of U.S. Regulatory Dossiers for GE Crops",
+    "tags": [
+      "organizations",
+      "workshops",
+      "regulatory",
+      "gene-editing"
+    ],
+    "sources": [
+      "2026-03-25.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Bayer Fellowship for Agricultural Science",
+    "tags": [
+      "grants",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-04-14.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Space Crops funding in NASA FINESST Graduate Fellowship",
+    "tags": [
+      "grants",
+      "grants-grads",
+      "space",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-04-14.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "CSHL Postdoc Virtual Recruitment Event",
+    "tags": [
+      "jobs",
+      "postdoc",
+      "grad"
+    ],
+    "sources": [
+      "2026-04-14.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "F31/F32 (NRSA Individual Postdoctoral Fellowship)",
+    "tags": [
+      "grants",
+      "grants-grads",
+      "grants-postdocs",
+      "nih"
+    ],
+    "sources": [
+      "2026-05-07.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "NSF Grants in FY2026",
+    "tags": [
+      "grants",
+      "nsf"
+    ],
+    "sources": [
+      "2026-05-07.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "INTERN for active NSF awardees",
+    "tags": [
+      "grants",
+      "grants-grads",
+      "nsf",
+      "internships"
+    ],
+    "sources": [
+      "2026-05-07.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "KendallSqBio",
+    "tags": [
+      "organizations",
+      "postdoc",
+      "networking"
+    ],
+    "sources": [
+      "2026-05-07.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Researcher 2 Entrepreneur",
+    "tags": [
+      "organizations",
+      "entrepreneurship",
+      "grants",
+      "life-sciences"
+    ],
+    "sources": [
+      "2026-05-14.md"
+    ]
+  },
+  {
+    "type": "seminar",
+    "title": "3rd Plant Biochemistry Symposium",
+    "tags": [
+      "seminars",
+      "talks"
+    ],
+    "sources": [
+      "2026-05-19.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "USDA-ARS Genetic Characterization of Tomato Fruit Maturation",
+    "tags": [
+      "jobs",
+      "postdoc",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-05-19.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "Google DeepMind Fellowship in Genomics and AI",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "ai",
+      "europe"
+    ],
+    "sources": [
+      "2026-05-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Google DeepMind Fellowship in Genomics and AI",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "ai",
+      "europe"
+    ],
+    "sources": [
+      "2026-05-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "MIT Solve 10-for-10 Challenge",
+    "tags": [
+      "grants",
+      "entrepreneurship",
+      "industry"
+    ],
+    "sources": [
+      "2026-05-19.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Simons Foundation - Synthetic Plant Biology Research",
+    "tags": [
+      "grants",
+      "funding"
+    ],
+    "sources": [
+      "2026-06-02.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "USDA-ARS Postdoctoral Fellowship in Grapevine Genetics and Computer Vision",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "ai",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-06-02.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "USDA-ARS Postdoctoral Fellowship in Grapevine Genetics and Computer Vision",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "ai",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-06-02.md"
+    ]
+  },
+  {
+    "type": "organization",
+    "title": "Boston Ag Tech Community: Summer Meetup",
+    "tags": [
+      "organizations",
+      "networking",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "Postdoc Position, Yadav Lab (UMass Amherst)",
+    "tags": [
+      "jobs",
+      "postdoc"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "USDA SPECA Grants",
+    "tags": [
+      "grants",
+      "education",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "USDA AFRI Foundational and Applied Science Program",
+    "tags": [
+      "grants",
+      "agriculture"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "NSF Plant Genome Research Program (PGRP)",
+    "tags": [
+      "grants",
+      "nsf"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "EMBL ARISE2 Fellowships 2026",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "europe"
+    ],
+    "sources": [
+      "2026-07-16.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "EMBL ARISE2 Fellowships 2026",
+    "tags": [
+      "jobs",
+      "grants",
+      "postdocs",
+      "europe"
+    ],
+    "sources": [
+      "2026-07-16.md"
     ]
   }
 ]
