@@ -600,5 +600,88 @@
     "sources": [
       "2026-07-16.md"
     ]
+  },
+  {
+    "type": "seminar",
+    "title": "KendalSqBio Postdoc Symposium",
+    "tags": [
+      "seminars",
+      "networking",
+      "postdocs",
+      "life-sciences"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "MIT Catalyst Fellowship",
+    "tags": [
+      "grants",
+      "grants-postdocs"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "NSF Postdoctoral Research Fellowships in Biology (PRFB)",
+    "tags": [
+      "grants",
+      "grants-postdocs",
+      "nsf",
+      "ai"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "Rowland Fellows Program",
+    "tags": [
+      "grants",
+      "grants-postdocs",
+      "grants-grads"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "grant",
+    "title": "OECD Co-operative Research Programme (CRP)",
+    "tags": [
+      "grants",
+      "agriculture",
+      "funding"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "Assistant Professor, Plant Health & Microbe Interactions (UMass Amherst)",
+    "tags": [
+      "jobs",
+      "faculty"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
+  },
+  {
+    "type": "job",
+    "title": "Assistant Research Professor, Anderson Lab (Penn State)",
+    "tags": [
+      "jobs",
+      "faculty"
+    ],
+    "sources": [
+      "2026-08-02.md"
+    ]
   }
 ]
